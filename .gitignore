@@ -1,0 +1,4 @@
+*.log
+Gemfile.lock
+.idea/
+.idea/*

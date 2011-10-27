@@ -1,0 +1,7 @@
+source 'http://rubygems.org'
+
+gem 'httparty'
+gem 'colored'
+gem 'builder'
+gem 'i18n'
+gem 'active_support'

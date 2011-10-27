@@ -1,0 +1,59 @@
+# Alacrity API Client Samples
+
+This project provides sample code illustrating the use of the Alacrity REST APIs.
+
+Structure is as follows:
+
+* dob/ - Samples showing how to use the Direct Operator Billing (i.e. charging) APIs.
+        These APIs allow you to charge mobile subscribers direct to their mobile bills.
+
+* sms/ - SMS-based sending and receiving of SMS messages. Client code coming soon.
+
+* location/ - Location-based APIs. Client code coming soon.
+
+## ``dob/ruby'' Direct Operator Billing Examples
+
+This directory contains a simple script written in Ruby which illustrates the following
+DOB API calls:
+
+* Immediate Charge
+* Two-phase Payment
+* Customer Care - Refunds, Transaction History
+* Provisioning Sandbox with test data and downloading test reports
+
+To run the examples, you'll need Ruby 1.9.2 installed. See [here](http://beginrescueend.com/)
+
+once this is done, set up dependencies:
+
+    $ cd dob/ruby/
+    $ gem install bundler
+    $ bundle install
+
+Logon to the [partner portal](https://www.sla-alacrity.com)
+and create an API Login account and a test merchant. Add the details to the configuration file:
+
+    $ cp settings.rb.template settings.rb
+    $ vi settings.rb
+    ALACRITY_URI='https://sandbox.api.sla-alacrity.com/1.0'
+    API_USERNAME='set username'
+    API_PASSWORD='set password'
+    MERCHANT_ID='set default merchant'
+
+You should be all good to go:
+
+    $ ruby ././run-tests.rb
+	Initializer:                                      ok
+	immediate charge:                                 ok
+	partial refund of previous charge:                ok
+	two-phase reserve / capture:                      ok
+	two-phase reserve / release:                      ok
+	partial refund captured transaction:              ok
+	reserve without capture or release:               ok
+	retrieve customer transaction details:            ok
+	customer transaction history:                     ok
+	Finalizer:                                        ok
+
+If there are any problems see the log file ``transactions.log''
+
+
+
