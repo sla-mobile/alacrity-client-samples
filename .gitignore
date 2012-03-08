@@ -2,3 +2,5 @@
 Gemfile.lock
 .idea/
 .idea/*
+*.user_prefs
+

@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="dotnet_client/Main.cs">
+    <Files>
+      <File FileName="../../mono_client/snippet.cs" Line="210" Column="2" />
+      <File FileName="dotnet_client/Main.cs" Line="86" Column="21" />
+      <File FileName="../../mono_client/tlstst.cs" Line="301" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
